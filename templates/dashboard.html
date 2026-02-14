@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Ops Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>AI Ops</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Automations</li>
+            <li>Logs</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="header">
+            <h1>Operations Dashboard</h1>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>File Organizer</h3>
+                <form action="/run-organizer" method="post">
+                    <input type="text" name="folder" placeholder="Folder path">
+                    <button type="submit">Run</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>System Report</h3>
+                <a href="/system-report">
+                    <button>Generate Report</button>
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>Automation Logs</h3>
+                <p>Log viewer coming next...</p>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
