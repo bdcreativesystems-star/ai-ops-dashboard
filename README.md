@@ -37,7 +37,7 @@ This project demonstrates automation engineering, backend development, logging s
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOURUSERNAME/ai-ops-dashboard.git
+git clone https://github.com/bdcreativesystems-star/ai-ops-dashboard.git
 cd ai-ops-dashboard
 # ai-ops-dashboard
 This project was built to explore automation tooling and dashboard-based workflow management using Python and Flask. It demonstrates modular automation design, logging systems, and backend-driven UI development.
